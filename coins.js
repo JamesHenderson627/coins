@@ -15,23 +15,23 @@ function coins(sum) {
 	
 	var newArr = []
 	
-		while(sum>=25){
-			newArr.push(25)
-			sum -=25
+		while(sum>=cents[0]){
+			newArr.push(cents[0])
+			sum -= cents[0]
 		}
-		while(sum>=10){
-			newArr.push(10)
-			sum-=10
+		while(sum>=cents[1]){
+			newArr.push(cents[1])
+			sum-= cents[1]
 		}
-		while(sum>=5){
-			newArr.push(5)
-			sum -=5
+		while(sum>=cents[2]){
+			newArr.push(cents[2])
+			sum -= cents[2]
 		}
-		while(sum>=1){
-			newArr.push(1)
-			sum -=1
+		while(sum>=cents[3]){
+			newArr.push(cents[3])
+			sum -= cents[3]
 		}
-	//console.log(newArr)
+	// console.log(newArr)
 	return newArr
 }
 // tests
